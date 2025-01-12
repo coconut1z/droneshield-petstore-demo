@@ -19,7 +19,7 @@ pip install pytest selenium requests
 ## Usage
 To run all the tests, use:
 ```bash
-pytest tests/test_sauce_demo.py -v
+pytest tests/test_api_petstore.py -v
 ```
 The "-v" command line option will show verbose output; it'll show the name of each test and is more readable.
 To run a specific set of tests, "-m" and a marker can be used. Markers are:
@@ -30,15 +30,15 @@ To run a specific set of tests, "-m" and a marker can be used. Markers are:
 
 This example will run just the pet tests:
 ```bash
-pytest tests/test_sauce_demo.py -v -m pet
+pytest tests/test_api_petstore.py -v -m pet
 ```
 
 Or run just the store and user tests:
 ```bash
-pytest tests/test_sauce_demo.py -v -m "store or user"
+pytest tests/test_api_petstore.py -v -m "store or user"
 ```
 
 Or run just the negative pet scenarios:
 ```bash
-pytest tests/test_sauce_demo.py -v -m "pet and negative"
+pytest tests/test_api_petstore.py -v -m "pet and negative"
 ```
